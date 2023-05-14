@@ -1,94 +1,96 @@
 
 const PatientInves = () => {
     return (
-        <div className="border border-4 border-white">
-            <h1>Patient Info</h1>
-            <div className="grid grid-cols-3 gap-2">
-                <div className="flex">
-                    <label htmlFor="mrno">MR No</label>
-                    <input type="number" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="mrdate">MR Date</label>
-                    <input type="date" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="mryr">MR Year</label>
-                    <input type="text" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="patient-id">Patient Id</label>
-                    <input type="number" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="patient-type">Patient Type</label>
-                    <input type="text" />
-                </div>
-                <div className="flex"></div>
-                <div className="flex">
-                    <label htmlFor="name">Name</label>
-                    <input type="text" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="age">Age</label>
-                    <input type="number" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="dob">DOB</label>
-                    <input type="date" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="contact-no">Contact No</label>
-                    <input type="text" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="sex">Sex</label>
-                    <input type="text" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="blood">Blood Grp</label>
-                    <input type="text" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="address">Address</label>
-                    <input type="text" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="email">Email</label>
-                    <input type="text" />
-                </div>
-                <div className="flex">
-                    <label htmlFor="email">Report</label>
-                    <input type="text" />
+        <div className="">
+            <div className="border border-black border-2 p-2 bg-gray-200">
+                <h1 className="my-1 text-lg capitalize font-semibold">Patient Info</h1>
+                <div className="grid grid-cols-3 gap-2">
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="mrno">MR No</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="number" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="mrdate">MR Date</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="date" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="mryr">MR Year</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="patient-id">Patient Id</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="number" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="patient-type">Patient Type</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center"></div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="name">Name</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="age">Age</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="number" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="dob">DOB</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="date" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="contact-no">Contact No</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="sex">Sex</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="blood">Blood Grp</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="address">Address</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="email">Email</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
+                    </div>
+                    <div className="flex justify-between font-semibold items-center">
+                        <label htmlFor="email">Report</label>
+                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
+                    </div>
                 </div>
             </div>
             <div>
-                <div className="flex">
-                    <label htmlFor="text-number">Test Number</label>
-                    <input type="text" />
+                <div className="flex justify-start font-semibold items-center py-4 font-bold text-lg">
+                    <label htmlFor="text-number">Test Name</label>
+                    <input className="ml-3 p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
                 </div>
-                <textarea name="" className="w-full h-full"></textarea>
+                <textarea name="" className="border border-2 border-black h-[320px] w-full text-lg font-semibold outline-none p-2"></textarea>
             </div>
-            <div className="grid grid-cols-2">
-                <div className="flex">
+            <div className="grid grid-cols-2 gap-2 p-4">
+                <div className="flex justify-between font-semibold items-center">
                     <label htmlFor="dr-name">Doctor Name</label>
-                    <input type="text" />
+                    <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
                 </div>
-                <div className="flex">
+                <div className="flex justify-between font-semibold items-center">
                     <label htmlFor="disc-by-dr">Disc By Doctor %</label>
-                    <input type="text" />
+                    <input className="p-1 border border-1 border-black outline-none text-lg w-1/5" type="text" />
                 </div>
-                <div className="flex">
+                <div className="flex justify-between font-semibold items-center">
                     <label htmlFor="reference">Referred By</label>
-                    <input type="text" />
+                    <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
                 </div>
-                <div className="flex">
+                <div className="flex justify-between font-semibold items-center">
                     <label htmlFor="disc-by-ref">Disc By Reference %</label>
-                    <input type="text" />
+                    <input className="p-1 border border-1 border-black outline-none text-lg w-1/5" type="text" />
                 </div>
-                <div className="flex">
+                <div className="flex justify-between font-semibold items-center">
                     <label htmlFor="delivery-date">Delivery Date</label>
-                    <input type="text" />
+                    <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="date" />
                 </div>
             </div>
         </div>
