@@ -1,7 +1,7 @@
 
-import {AiFillPrinter, AiOutlineFileSearch} from 'react-icons/ai'
-import {FaBarcode} from 'react-icons/fa'
-import {GrCopy} from 'react-icons/gr'
+import { AiFillPrinter, AiOutlineFileSearch } from 'react-icons/ai'
+import { FaBarcode } from 'react-icons/fa'
+import { GrCopy } from 'react-icons/gr'
 const Payment = () => {
     return (
         <div className="min-h-screen">
@@ -70,34 +70,38 @@ const Payment = () => {
                     </div>
                     <div >
                         <div className="flex items-center font-semibold gap-2 justify-between mb-1">
-                            <label htmlFor="pay-opt">Pay Option</label>
-                            <input className="p-1 border border-1 border-black outline-none text-lg w-1/2" type="number" />
+                            <option value="option_value">Pay Option</option>
+                            <select className='p-1 border border-1 border-black outline-none text-lg w-1/2'>
+                                <option value="option1">CASH</option>
+                                <option value="option2">CARD</option>
+                                <option value="option3">BKASH</option>
+                            </select>
                         </div>
                         <div className="flex items-center font-semibold gap-2 justify-between mb-1">
                             <label htmlFor="due" className="font-bold text-red-500 text-lg">DUE</label>
                             <input className="p-1 border border-1 border-black outline-none text-lg w-1/2" type="number" />
                         </div>
                     </div>
-                    <div className="font-semibold">
-                        <div className="flex">
+                    <div className="">
+                        <div className="flex mb-1">
                             <input className="p-1 border border-1 border-black outline-none text-lg w-1/2" type="checkbox" id="cus" />
-                            <label htmlFor="cus">Customer Copy</label>
+                            <label htmlFor="cus" className='text-blue-700'>Customer Copy</label>
                         </div>
-                        <div className="flex">
+                        <div className="flex mb-1">
                             <input className="p-1 border border-1 border-black outline-none text-lg w-1/2" type="checkbox" id="bill-copy" />
-                            <label htmlFor="bill-copy">Bill Copy</label>
+                            <label htmlFor="bill-copy" className='text-blue-700'>Bill Copy</label>
                         </div>
-                        <div className="flex">
+                        <div className="flex mb-1">
                             <input className="p-1 border border-1 border-black outline-none text-lg w-1/2" type="checkbox" id="lab-copy" />
-                            <label htmlFor="lab-copy">Lab Copy</label>
+                            <label htmlFor="lab-copy" className='text-blue-700'>Lab Copy</label>
                         </div>
                     </div>
                 </div>
                 <div className='flex gap-4 my-6 ml-4'>
-                    <GrCopy size={50} className='cursor-pointer'/>
-                    <AiFillPrinter size={50} className='text-red-500 cursor-pointer'/>
-                    <AiOutlineFileSearch size={50} className='text-blue-500 cursor-pointer'/>
-                    <FaBarcode size={50} className='text-green-500 cursor-pointer'/>
+                    <GrCopy size={50} className='cursor-pointer' />
+                    <AiFillPrinter size={50} className='text-red-500 cursor-pointer' />
+                    <AiOutlineFileSearch size={50} className='text-blue-500 cursor-pointer' />
+                    <FaBarcode size={50} className='text-green-500 cursor-pointer' />
                 </div>
             </div>
 

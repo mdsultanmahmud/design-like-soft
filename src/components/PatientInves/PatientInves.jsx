@@ -22,8 +22,14 @@ const PatientInves = () => {
                         <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="number" />
                     </div>
                     <div className="flex justify-between font-semibold items-center">
-                        <label htmlFor="patient-type">Patient Type</label>
-                        <input className="p-1 border border-1 border-black outline-none text-lg w-3/5" type="text" />
+                        <option value="option_value">Patient Type</option>
+                        <select name="myOption" className="p-1 border border-1 border-black outline-none text-lg w-3/5  ">
+                            <option value="option2">NHBD</option>
+                            <option value="option1">General</option>
+                            <option value="option2">ApnarLab</option>
+                            <option value="option3">Close Loop</option>
+                            <option value="option3">Pre Test</option>
+                        </select>
                     </div>
                     <div className="flex justify-between font-semibold items-center"></div>
                     <div className="flex justify-between font-semibold items-center">
