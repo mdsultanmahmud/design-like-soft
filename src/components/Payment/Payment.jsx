@@ -1,7 +1,7 @@
 
 const Payment = () => {
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen border border-4 border-white">
             <h1>Payment Option</h1>
             <div className="flex">
                 <div>

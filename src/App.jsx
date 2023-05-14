@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="bg-gray-300">
       <Navbar />
-      <div className="flex gap-4 h-[900px] justify-between">
+      <div className="flex gap-4 h-[900px] justify-between p-3">
         <div className="w-[330px]">
           <SearchRecord />
         </div>
@@ -17,7 +17,7 @@ function App() {
             <span>MR Report Preview</span>
             <span>Barcode Preview</span>
           </div>
-          <div className="flex justify-between gap-10">
+          <div className="flex justify-between">
             <div className="">
               <PatientInves />
             </div>
