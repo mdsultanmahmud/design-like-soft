@@ -5,14 +5,29 @@ import SearchRecord from "./components/SearchRecord/SearchRecord"
 
 function App() {
   return (
-    <div className="max-w-[1400px]">
+    <div className="bg-gray-300">
       <Navbar />
-      <div className="flex gap-5 flex-wrap">
-        <SearchRecord />
-        <PatientInves />
-        <Payment />
+      <div className="flex gap-4 h-[900px] justify-between">
+        <div className="w-[330px]">
+          <SearchRecord />
+        </div>
+        <div className="">
+          <div className="flex gap-4">
+            <span>Patient Investigation</span>
+            <span>MR Report Preview</span>
+            <span>Barcode Preview</span>
+          </div>
+          <div className="flex justify-between gap-10">
+            <div className="">
+              <PatientInves />
+            </div>
+            <div className="">
+              <Payment />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </div >
   )
 }
 
